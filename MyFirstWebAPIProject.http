@@ -3,4 +3,41 @@
 GET {{MyFirstWebAPIProject_HostAddress}}/weatherforecast/
 Accept: application/json
 
+### Get All Products
+GET {{MyFirstWebAPIProject_HostAddress}}/api/products
+Accept: application/json
+###
+
+### Get Product with ID 1
+GET {{MyFirstWebAPIProject_HostAddress}}/api/products/1
+Accept: application/json
+###
+
+### Create a New Product
+POST {{MyFirstWebAPIProject_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+    "Name": "New Product",
+    "Price": 39.99,
+    "Category": "Books"
+}
+
+###
+
+### Update Product with ID 1
+PUT {{MyFirstWebAPIProject_HostAddress}}/api/products/1
+Content-Type: application/json
+
+{
+    "Id": 1,
+    "Name": "Updated Product",
+    "Price": 49.99,
+    "Category": "Electronics"
+}
+
+###
+
+### Delete Product with ID 1
+DELETE {{MyFirstWebAPIProject_HostAddress}}/api/products/1
 ###
