@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using MyFirstWebAPIProject.Models;
 
 namespace MyFirstWebAPIProject.Controllers;
 
